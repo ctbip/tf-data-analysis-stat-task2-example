@@ -13,4 +13,5 @@ def solution(p: float, x: np.array) -> tuple:
     alpha = 1 - p
     min_val = np.min(x*x)
     N = len(x)
-    return np.sqrt(N*min_val/expon.ppf(1 - alpha/2)/30), np.sqrt(N*min_val/expon.ppf(alpha/2)/30)
+    # return np.sqrt(N*min_val/expon.ppf(1 - alpha/2)/30), np.sqrt(N*min_val/expon.ppf(alpha/2)/30)
+    return 0, np.sqrt(N*min_val/expon.ppf(alpha)/30)
